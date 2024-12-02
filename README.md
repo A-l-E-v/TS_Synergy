@@ -4,6 +4,7 @@
 
 TypeScript course at Synergy University
 
+
 ___________________________
 
 corepack enable
