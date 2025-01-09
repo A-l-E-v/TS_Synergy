@@ -1,0 +1,442 @@
+---- Тестирование users ----
+users.get() [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '1-980-603-4363',
+    email: 'dui@aol.com',
+    address: 'P.O. Box 895, 4432 Placerat, Avenue'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Zorita Mason',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+users add [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '1-980-603-4363',
+    email: 'dui@aol.com',
+    address: 'P.O. Box 895, 4432 Placerat, Avenue'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Zorita Mason',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  },
+  {
+    id: 6,
+    name: 'Ivan Petrov',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+users.getOne() {
+  id: 4,
+  name: 'Zorita Mason',
+  phone: '1-262-419-4287',
+  email: 'arcu.vel@protonmail.net',
+  address: 'P.O. Box 631, 1093 Metus Street'
+}
+users.getOne() {
+  id: 1,
+  name: 'Lane Mcdonald',
+  phone: '1-980-603-4363',
+  email: 'dui@aol.com',
+  address: 'P.O. Box 895, 4432 Placerat, Avenue'
+}
+users.getOne() {
+  id: 2,
+  name: 'Emma Ford',
+  phone: '(472) 855-7514',
+  email: 'aliquam.ornare@protonmail.net',
+  address: 'P.O. Box 311, 427 Egestas Av.'
+}
+users.getOne() undefined
+users.update() {
+  id: 4,
+  name: 'Sergey',
+  phone: '1-262-419-4287',
+  email: 'arcu.vel@protonmail.net',
+  address: 'P.O. Box 631, 1093 Metus Street'
+}
+users.update() {
+  id: 1,
+  name: 'Lane Mcdonald',
+  phone: '12345678910',
+  email: 'dui@aol.com',
+  address: 'Moscow, Russia'
+}
+users.update() undefined
+users.delete() {
+  id: 6,
+  name: 'Ivan Petrov',
+  phone: '1-788-618-2639',
+  email: 'consequat.dolor@protonmail.net',
+  address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+}
+users.delete() undefined
+users.get()4 [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '12345678910',
+    email: 'dui@aol.com',
+    address: 'Moscow, Russia'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Sergey',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+---- Тестирование orders ----
+orders.get() [ { id: 1, price: 100 }, { id: 2, price: 200 }, { id: 3, price: 300 } ]
+orders.add() [
+  { id: 1, price: 100 },
+  { id: 2, price: 200 },
+  { id: 3, price: 300 },
+  { id: 4, price: 400 }
+]
+orders.delete { id: 2, price: 200 }
+orders.get [ { id: 1, price: 100 }, { id: 3, price: 300 }, { id: 4, price: 400 } ]
+users.get() [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '12345678910',
+    email: 'dui@aol.com',
+    address: 'Moscow, Russia'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Sergey',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+users add [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '12345678910',
+    email: 'dui@aol.com',
+    address: 'Moscow, Russia'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Sergey',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  },
+  {
+    id: 6,
+    name: 'Ivan Petrov',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+users.getOne() {
+  id: 4,
+  name: 'Sergey',
+  phone: '1-262-419-4287',
+  email: 'arcu.vel@protonmail.net',
+  address: 'P.O. Box 631, 1093 Metus Street'
+}
+users.getOne() {
+  id: 1,
+  name: 'Lane Mcdonald',
+  phone: '12345678910',
+  email: 'dui@aol.com',
+  address: 'Moscow, Russia'
+}
+users.getOne() {
+  id: 2,
+  name: 'Emma Ford',
+  phone: '(472) 855-7514',
+  email: 'aliquam.ornare@protonmail.net',
+  address: 'P.O. Box 311, 427 Egestas Av.'
+}
+users.getOne() undefined
+users.update() {
+  id: 4,
+  name: 'Sergey',
+  phone: '1-262-419-4287',
+  email: 'arcu.vel@protonmail.net',
+  address: 'P.O. Box 631, 1093 Metus Street'
+}
+users.update() {
+  id: 1,
+  name: 'Lane Mcdonald',
+  phone: '12345678910',
+  email: 'dui@aol.com',
+  address: 'Moscow, Russia'
+}
+users.update() undefined
+users.get()3 [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '12345678910',
+    email: 'dui@aol.com',
+    address: 'Moscow, Russia'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Sergey',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  },
+  {
+    id: 6,
+    name: 'Ivan Petrov',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+users.get()3 [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '12345678910',
+    email: 'dui@aol.com',
+    address: 'Moscow, Russia'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Sergey',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  },
+  {
+    id: 6,
+    name: 'Ivan Petrov',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+users.delete() {
+  id: 6,
+  name: 'Ivan Petrov',
+  phone: '1-788-618-2639',
+  email: 'consequat.dolor@protonmail.net',
+  address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+}
+users.delete() undefined
+users.get()4 [
+  {
+    id: 1,
+    name: 'Lane Mcdonald',
+    phone: '12345678910',
+    email: 'dui@aol.com',
+    address: 'Moscow, Russia'
+  },
+  {
+    id: 2,
+    name: 'Emma Ford',
+    phone: '(472) 855-7514',
+    email: 'aliquam.ornare@protonmail.net',
+    address: 'P.O. Box 311, 427 Egestas Av.'
+  },
+  {
+    id: 3,
+    name: 'Louis Juarez',
+    phone: '1-895-966-2657',
+    email: 'venenatis.lacus@outlook.net',
+    address: 'Ap #125-478 Sit Av.'
+  },
+  {
+    id: 4,
+    name: 'Sergey',
+    phone: '1-262-419-4287',
+    email: 'arcu.vel@protonmail.net',
+    address: 'P.O. Box 631, 1093 Metus Street'
+  },
+  {
+    id: 5,
+    name: 'Harriet Acevedo',
+    phone: '1-788-618-2639',
+    email: 'consequat.dolor@protonmail.net',
+    address: 'P.O. Box 769, 5046 Pellentesque, Rd.'
+  }
+]
+orders.get() [ { id: 1, price: 100 }, { id: 3, price: 300 }, { id: 4, price: 400 } ]
+orders.add() [
+  { id: 1, price: 100 },
+  { id: 3, price: 300 },
+  { id: 4, price: 400 },
+  { id: 4, price: 400 }
+]
+orders.getOne { id: 1, price: 100 }
+orders.getOne undefined
+orders.update { id: 3, price: 500 }
+orders.delete undefined
+orders.get [
+  { id: 1, price: 100 },
+  { id: 3, price: 500 },
+  { id: 4, price: 400 },
+  { id: 4, price: 400 }
+]
