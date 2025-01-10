@@ -1,0 +1,14 @@
+mkdir legacy
+cd legacy
+mkdir -p src/LegacyModule src/Posts
+touch src/LegacyModule/index.js src/LegacyModule/index.d.ts
+touch src/Posts/index.ts src/Posts/posts.interface.ts src/Posts/posts.service.ts src/index.ts
+
+
+npm init -y
+npm install axios lodash
+npm install --save-dev @types/lodash
+
+touch tsconfig.json
+
+
