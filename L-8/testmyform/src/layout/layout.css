@@ -1,0 +1,131 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+
+/* Стили заголовка */
+header {
+  height: 60px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Стили заголовка в header */
+.header-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Стили навигации */
+.navigation {
+  flex-grow: 1;
+}
+
+/* Стили списка навигации */
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили пунктов списка навигации */
+.navigation-list li {
+  margin-left: 20px;
+}
+
+/* Стили ссылок в навигации */
+.navigation-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Стили ссылок при наведении */
+.navigation-list a:hover {
+  color: #FFC107;
+}
+
+/* Стили активной ссылки */
+.navigation-list a.active {
+  border-bottom: 2px solid #FFC107;
+}
+
+/* Стили заголовка h1 */
+h1 {
+  text-align: center;
+}
+
+/* Стили контейнера формы */
+.form-container {
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 80%;
+  padding: 20px;
+  border: 2px solid #FFC107;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Стили звёздочек обязательных полей */
+label:after {
+  content: " *";
+  color: red;
+}
+
+/* Стили полей ввода */
+input {
+  border-radius: 5px;
+  border: 2px solid #FFC107;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Стили ошибок */
+.srv-validation-message {
+  color: red;
+  font-size: 12px;
+}
+
+/* Стили для формы */
+.form-container {
+  width: auto;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #FFC107;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Стили кнопки отправки */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #FFC107;
+  border-radius: 5px;
+  background-color: #FFC107;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+/* Нижняя граница рамки формы */
+.form-container {
+  padding-bottom: 20px;
+}
+
+/* Стили для отключенной кнопки */
+.submit-button:disabled {
+  background-color: #ccc;
+  border-color: #aaa;
+  cursor: not-allowed;
+}

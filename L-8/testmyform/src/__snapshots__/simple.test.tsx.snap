@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Registration Page should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="form-container"
+  >
+    <form
+      class="container-form"
+    >
+      <h1>
+        Регистрация
+      </h1>
+      <div>
+        <label
+          for="login"
+        >
+          Login
+        </label>
+        <input
+          id="login"
+          name="login"
+          placeholder="Введите логин"
+          type="text"
+          value=""
+        />
+        <div
+          class="srv-validation-message"
+        />
+      </div>
+      <div>
+        <label
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          placeholder="Введите email"
+          type="email"
+          value=""
+        />
+        <div
+          class="srv-validation-message"
+        />
+      </div>
+      <div>
+        <label
+          for="password"
+        >
+          Пароль
+        </label>
+        <input
+          id="password"
+          name="password"
+          placeholder="Введите пароль"
+          type="password"
+          value=""
+        />
+        <div
+          class="srv-validation-message"
+        />
+      </div>
+      <button
+        class="submit-button"
+        disabled=""
+        type="submit"
+      >
+        Зарегистрироваться!
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
