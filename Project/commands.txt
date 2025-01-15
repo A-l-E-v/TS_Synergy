@@ -1,0 +1,16 @@
+yarn create vite weather --template react-ts
+cd weather
+yarn
+yarn dev
+code .
+
+
+
+corepack enable
+yarn set version stable
+yarn
+
+yarn add react-bootstrap bootstrap react-router-dom
+yarn add -D sass@~1.64.2
+
+

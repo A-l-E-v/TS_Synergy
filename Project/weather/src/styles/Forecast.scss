@@ -1,0 +1,43 @@
+.forecast {
+    padding: 20px;
+    background-color: black;
+    height: 100vh;
+}
+
+.table-header{
+    text-align: center; /* Центрирование заголовка */
+    color: lightgray;
+}
+.forecast-container {
+    display: flex;
+    justify-content: center; /* Центрирование контейнера */
+}
+
+/* Отступы вокруг кнопки */
+.button {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.table {
+    width: 100%; /* Занимает всю ширину */
+    margin: 0 auto; /* Центрирование таблицы */
+}
+
+.table th, .table td {
+    text-align: center; /* Центрирование текста в ячейках */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) { /* Для планшетов */
+    .forecast {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) { /* Для смартфонов */
+    .forecast {
+        padding: 10px;
+    }
+}
+

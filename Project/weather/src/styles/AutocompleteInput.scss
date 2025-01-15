@@ -1,0 +1,13 @@
+.autocomplete-container {
+    position: relative;
+}
+// Выпадающий список городов
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}

@@ -1,0 +1,45 @@
+.home {
+    text-align: left;
+    background-color: black;
+    height: 100vh;
+
+
+    .header {
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 2px;
+        justify-content: space-between;
+        color: lightgray;
+    }
+
+    button{
+        border-radius: 8px;
+    }
+    input {
+        flex-shrink: 0;
+    }
+
+    .weather-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 карточки на широких экранах
+        gap: 5px;
+
+        @media (max-width: 1024px) { // Для планшетов
+            grid-template-columns: repeat(2, 1fr); // 2 карточки на планшетах
+        }
+
+        @media (max-width: 600px) { // Для мобильных устройств
+            grid-template-columns: 1fr; // 1 карточка на мобильных
+        }
+
+        // Стиль для карточек
+        .card {
+            padding: 2px;
+            transition: background-color 0.3s, border 0.3s;
+
+            &:hover {
+                background-color: #083d77; // Цвет фона при наведении
+            }
+        }
+    }
+}
